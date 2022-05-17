@@ -1,0 +1,38 @@
+.SongForm.Block {
+  flex: 2;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input,
+    select {
+      border: 1px solid #8c8a8f;
+      background: #262626;
+      padding: 10px;
+      border-radius: 5px;
+      color: #bbb;
+    }
+    button {
+      background: #5c24df;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: white;
+      font-weight: bold;
+      opacity: 0.8;
+      transition: 0.25s ease-out;
+
+      &:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
