@@ -3,16 +3,13 @@ import "./SongList.scss";
 import Block from "../../shared/Block/Block";
 import { connect } from "react-redux";
 import { getSongs } from "../../../store/songs/songs.selectors";
-import { listSongsOperation } from "../../../store/songs/songs.operations";
 
 const mapStateToProps = (state) => ({
   songs: getSongs(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onSongsList: () => {
-    dispatch(listSongsOperation({}));
-  },
+  // TODO
 });
 
 const connector = connect(mapStateToProps, mapDispatchToProps);
@@ -23,14 +20,7 @@ class SongList extends React.Component {
     this.state = {};
   }
 
-  componentDidMount = () => {
-    this.listSongs();
-  };
-
-  listSongs = () => {
-    const { onSongsList } = this.props;
-    onSongsList();
-  };
+  // TODO
 
   render() {
     const { songs } = this.props;

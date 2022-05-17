@@ -1,13 +1,10 @@
-const setSongs = (state, { payload }) => {
-  state.songs = [...payload.songs];
-  return state;
-};
+// TODO
 
 const addSong = (state, { payload }) => {
   state.songs = [...state.songs, payload.song];
   return state;
 };
 
-const reducers = { setSongs, addSong };
+const reducers = { addSong };
 
 export default reducers;
